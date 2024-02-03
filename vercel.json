@@ -38,6 +38,12 @@
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
+        },
+        {
+            "src": "/api/(.*)",
+            "headers": {
+                "Access-Control-Allow-Oirigin": "*"
+            }
         }
     ]
 }
